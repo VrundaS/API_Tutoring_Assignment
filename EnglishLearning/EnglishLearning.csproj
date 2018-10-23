@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-EnglishLearning-E8316E5C-429A-4E32-B7E9-84A3A0C5F922</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20181023214335_Initial.cs" />
+    <Compile Remove="Data\Migrations\20181023214335_Initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20181023221410_AddedFandLNameColumn.cs" />
+    <Compile Remove="Data\Migrations\20181023221410_AddedFandLNameColumn.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.3" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Services\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+</Project>
